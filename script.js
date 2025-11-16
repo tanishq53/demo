@@ -6,7 +6,7 @@ document.getElementById('converter-form').addEventListener('submit', async funct
     const amount = document.getElementById('amount').value;
 
     try {
-        const response = await fetch(`https://tanishq53.github.io/demo//api/convert?from=${from}&to=${to}&amount=${amount}`);
+        const response = await fetch(`https://currencyconverter.onrender.com/api/convert?from=${from}&to=${to}&amount=${amount}`);
         const text = await response.text();
         document.getElementById('result').innerText = text;
     } catch (error) {
